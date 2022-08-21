@@ -1,11 +1,13 @@
 package com.xworkz.inheritancetypecasting;
 
-public class OnlineSuperMarket extends SuperMarket {
+public class OnlineSuperMarket extends SuperMarket 
+{
 	public String onlineMarketName;
 	public String itemName;
 	public int itemPrice;
 
-	public OnlineSuperMarket(String onlineMarketName, String itemName, int itemPrice) {
+	public OnlineSuperMarket(String onlineMarketName, String itemName, int itemPrice)
+	{
 		super("major market", 45, "Ganesh");
 		this.onlineMarketName = onlineMarketName;
 		this.itemName = itemName;
@@ -14,7 +16,8 @@ public class OnlineSuperMarket extends SuperMarket {
 		System.out.println("constructor of OnlineSuperMarket");
 	}
 
-	public void display() {
+	public void display() 
+	{
 		System.out.println(super.marketName);
 		System.out.println(super.itemsAvialable);
 		System.out.println(super.maintanance);
@@ -26,3 +29,4 @@ public class OnlineSuperMarket extends SuperMarket {
 		System.out.println(this.itemPrice);
 	}
 }
+

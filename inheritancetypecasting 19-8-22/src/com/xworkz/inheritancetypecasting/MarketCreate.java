@@ -1,8 +1,9 @@
 package com.xworkz.inheritancetypecasting;
 
-public class MarketCreate {
-
-	public static void main(String[] args) {
+public class MarketCreate 
+{
+	public static void main(String[] args) 
+	{
 		Market market1 = new Market("Janata market", 25, false);
 		Market market2 = new SuperMarket("major market", 45, "Ganesh");
 		Market market3 = new OnlineSuperMarket("Meshoo", "Mobilecover", 200);
@@ -18,33 +19,42 @@ public class MarketCreate {
 		osm.display();
 		System.out.println("=================================");
 
-		if (market2 instanceof SuperMarket) {
+		if (market2 instanceof SuperMarket) 
+		{
 			SuperMarket converted = (SuperMarket) market2;
 			converted.display();
 			System.out.println("ref of supermarket");
-		} else {
+		} 
+		else 
+		{
 			System.out.println("not ref of supermarket");
 		}
 		System.out.println("===================================");
 
-		if (market3 instanceof OnlineSuperMarket) {
+		if (market3 instanceof OnlineSuperMarket) 
+		{
 			OnlineSuperMarket converted = (OnlineSuperMarket) market3;
 			converted.display();
 			System.out.println("ref of onlinesupermarket");
-		} else {
+		} 
+		else 
+		{
 			System.out.println("not ref of onlinesupermarket");
 		}
 		System.out.println("====================================");
 
-		if (market1 instanceof OnlineSuperMarket) {
+		if (market1 instanceof OnlineSuperMarket) 
+		{
 			OnlineSuperMarket converted = (OnlineSuperMarket) market1;
 			converted.display();
 			System.out.println("ref of OnlineSuperMarket");
-		} else {
+		} 
+		else 
+		{
 			System.out.println("not ref of OnlineSuperMarket");
 		}
-
 	}
+}
 
-	}
+
 
